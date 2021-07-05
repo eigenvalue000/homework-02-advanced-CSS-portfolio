@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --just-black: #000000;
+    --toxic-green: #08a75d;
+    --plain-white: #FFFFFF;
+    --scarlet-red: #e31b05;
+    --ocean-blue: #0782b3;
+    --concrete: #81878a;
+    --type-pink: #d4668a;
+}
+
+::selection {
+    background-color: var(--plain-white);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial;
+    background-color: var(--plain-white);
+    color: var(--just-black);
+    margin: 0;
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    background-color: var(--just-black);
+    color: var(--toxic-green);
+}
+
+nav {
+    display: flex;
+    background-color: var(--just-black);
+}
+
+nav a {
+    color: var(--toxic-green);
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem 1rem;
+}
+
+nav a:hover {
+    color: rebeccapurple;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+aside {
+    flex: 20%;
+    background-color: var(--scarlet-red);
+    color: var(--just-black);
+    padding: 2rem 5rem;
+}
+
+aside .about-text {
+    text-align: left;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--just-black);
+}
+
+section {
+    flex: 70%;
+    background-color: var(--ocean-blue);
+    color: var(--just-black);
+    padding: 0rem 10rem;
+}
+
+.subsection {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between; 
+}
+
+footer {
+    padding: 1rem 2rem;
+    text-align: right;
+    background: var(--plain-white);
+    color: var(--just-black);
+    font-size: 1.5rem;
+}
+
+footer h3 {
+    padding: 0.1rem;
+}
+
+/* About Me section */
+.about-img {
+    background-color: var(--just-black);
+    color: var(--toxic-green);
+    margin: 1rem auto;
+    padding: 0.1rem;
+    height: 25rem;
+    border: 0.5rem solid var(--plain-white);
+}
+
+.about-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.about-img h2 {
+    margin: auto;
+    padding: 1rem 0rem;
+    text-align: center;
+    color: var(--just-black);
+}
+
+
+
+/* Work Examples section */
+.project-1-img {
+    background-color: var(--just-black);
+    color: var(--toxic-green);
+    margin: 1rem;
+    padding: 0.1rem;
+    height: 30rem;
+    width: 100%;
+    border: 0.5rem solid var(--plain-white);
+}
+
+.project-1-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.project-1-img img:hover {
+    opacity: 0.5;
+}
+
+.project-2-img {
+    background-color: var(--just-black);
+    color: var(--toxic-green);
+    margin: 1rem;
+    padding: 0.1rem;
+    height: 30rem;
+    width: 45%;
+    border: 1rem solid var(--plain-white);
+}
+
+.project-2-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.project-2-img img:hover {
+    opacity: 0.5;
+}
+
+/* Tablets - change the color of header */
+@media screen and (max-width: 992px) {
+    header {
+        background: var(--concrete);
+    }
+}
+
+/* Large smartphones - change the color of the nvabar */
+@media screen and (max-width: 768px) {
+    nav {
+        background-color: var(--concrete);
+    }
+
+    .subsection {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-between; 
+    }
+
+    .project-2-img {
+        background-color: var(--just-black);
+        color: var(--toxic-green);
+        margin: 1rem;
+        padding: 0.1rem;
+        height: 30rem;
+        width: 100%;
+        border: 1rem solid var(--plain-white);
+    }
+}
+
+/* Small smartphones - change the color of the borders of images */
+@media screen and (max-width: 576px) {
+    .about-img {
+        border: 1rem solid var(--concrete);
+    }
+
+    .project-1-img {
+        border: 1rem solid var(--concrete);
+    }
+
+    .project-2-img {
+        border: 1rem solid var(--concrete);
+    }
+
+    header {
+        background-color: var(--just-black)
+    }
+}
+
+
+
+
+
+
+
+

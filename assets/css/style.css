@@ -61,6 +61,8 @@ aside {
     background-color: var(--scarlet-red);
     color: var(--just-black);
     padding: 2rem 5rem;
+    border-right: solid var(--just-black);
+    border-width: 1rem;
 }
 
 aside .about-text {

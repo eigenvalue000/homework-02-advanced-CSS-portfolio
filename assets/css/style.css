@@ -70,6 +70,17 @@ aside .about-text {
     color: var(--just-black);
 }
 
+aside .resume-button {
+    background-color: var(--concrete);
+    border: none;
+    color: var(--plain-white);
+    padding: 1rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: auto;
+}
+
 section {
     flex: 70%;
     background-color: var(--ocean-blue);

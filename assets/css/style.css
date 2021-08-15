@@ -172,6 +172,24 @@ footer h3 {
     opacity: 0.5;
 }
 
+#githubLink {
+    display: block;
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    border: solid 5px white;
+    position: relative;
+    bottom: 47px;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px 0;
+    font-weight: bold;
+    right: 5px;
+    
+}
+
+
+
 /* Tablets - change the color of header */
 @media screen and (max-width: 992px) {
     header {

@@ -13,231 +13,654 @@
 }
 
 ::selection {
-    background-color: var(--plain-white);
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-family: Arial;
-    background-color: var(--plain-white);
-    color: var(--just-black);
-    margin: 0;
-}
-
-header {
-    padding: 1rem;
-    text-align: center;
-    font-size: 3rem;
-    background-color: var(--just-black);
-    color: var(--toxic-green);
-}
-
-nav {
-    display: flex;
-    background-color: var(--just-black);
-}
-
-nav a {
-    color: var(--toxic-green);
-    font-size: 2rem;
-    text-decoration: none;
-    padding: 1rem 1rem;
-}
-
-nav a:hover {
-    color: rebeccapurple;
-}
-
-main {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-aside {
-    flex: 20%;
-    background-color: var(--scarlet-red);
-    color: var(--just-black);
-    padding: 2rem 5rem;
-    border-right: solid var(--just-black);
-    border-width: 1rem;
-}
-
-aside .about-text {
-    text-align: left;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-    color: var(--just-black);
-}
-
-aside .resume-button {
-    background-color: var(--concrete);
-    border: none;
-    color: var(--plain-white);
-    padding: 1rem 1rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: auto;
-}
-
-section {
-    flex: 70%;
-    background-color: var(--ocean-blue);
-    color: var(--just-black);
-    padding: 0rem 10rem;
-}
-
-.subsection {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: space-between; 
-}
-
-footer {
-    padding: 1rem 2rem;
-    text-align: right;
-    background: var(--plain-white);
-    color: var(--just-black);
-    font-size: 1.5rem;
-}
-
-footer h3 {
-    padding: 0.1rem;
-}
-
-/* About Me section */
-.about-img {
-    background-color: var(--just-black);
-    color: var(--toxic-green);
-    margin: 1rem auto;
-    padding: 0.1rem;
-    height: 25rem;
-    border: 0.5rem solid var(--plain-white);
-}
-
-.about-img img {
-    height: 100%;
-    width: 100%;
-}
-
-.about-img h2 {
-    margin: auto;
-    padding: 1rem 0rem;
-    text-align: center;
-    color: var(--just-black);
+    color: grey;
+    background-color: white;
+    cursor: default;
 }
 
 
 
-/* Work Examples section */
-.project-1-img {
-    background-color: var(--just-black);
-    color: var(--toxic-green);
-    margin: 1rem;
-    padding: 0.1rem;
-    height: 30rem;
-    width: 100%;
-    border: 0.5rem solid var(--plain-white);
-}
 
-.project-1-img img {
-    height: 100%;
-    width: 100%;
-}
-
-.project-1-img img:hover {
-    opacity: 0.5;
-}
-
-.project-2-img {
-    background-color: var(--just-black);
-    color: var(--toxic-green);
-    margin: 1rem;
-    padding: 0.1rem;
-    height: 30rem;
-    width: 45%;
-    border: 1rem solid var(--plain-white);
-}
-
-.project-2-img img {
-    height: 100%;
-    width: 100%;
-}
-
-.project-2-img img:hover {
-    opacity: 0.5;
-}
-
-#githubLink {
-    display: block;
-    background-color: black;
-    width: 100px;
-    height: 50px;
-    border: solid 5px white;
-    position: relative;
-    bottom: 47px;
-    text-align: center;
-    font-size: 13px;
-    padding: 10px 0;
-    font-weight: bold;
-    right: 5px;
+/* Large screens */
+@media screen and (min-width: 993px) {
+    body {
+        display: block;
+        background: black;
+    }
     
-}
-
-
-
-/* Tablets - change the color of header */
-@media screen and (max-width: 992px) {
     header {
-        background: var(--concrete);
+        display: block;
+        background-color: black;
+        color: var(--toxic-green);
     }
-}
+    
+    #title-container {
+        display: flex;
+        flex: row;
+        justify-content: space-evenly;
+    }
 
-/* Large smartphones - change the color of the nvabar */
-@media screen and (max-width: 768px) {
+    #sprite-container-left {
+        display: block;
+        border: solid 5px white;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
+
+    #second-title-container {
+        display: block;
+    }
+
+    #sprite-container-right {
+        display: block;
+        border: solid 5px white;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
+
     nav {
-        background-color: var(--concrete);
+        display: flex;
+        border: solid 2px black;
+        justify-content: space-evenly;
+        color: var(--toxic-green);
+    }
+    
+    a {
+        display: block;
+        border: solid 2px black;
+        color: var(--toxic-green);
+    }
+    
+    aside {
+        display: flex;
+        flex: row;
+        border: solid 5px black;
+        align-items: center;
+        background-color: var(--ocean-blue);
     }
 
-    .subsection {
+    #profile-pic {
+        width: 50%;
+        height: 50%;
+        border-right: solid 5px black;
+    }
+
+    #about-me-container {
+        display: flex;
+        flex-flow: column wrap;
+        width: 50%;
+    }
+
+    #upper-bar {
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }
+
+    #about-me-text {
+        display: block;
+        word-wrap: break-word;
+        border: solid 1px black;
+        width: 100%;
+        height: 100px;
+        background-color: var(--concrete);
+        color: white;
+        text-align: center;
+    }
+
+    #lower-bar {
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }
+
+    main {
         display: flex;
         flex-flow: row wrap;
+        border: solid 5px black;
         justify-content: center;
-        align-content: space-between; 
+        align-items: center;
+        background-color: var(--ocean-blue);
     }
 
-    .project-2-img {
-        background-color: var(--just-black);
-        color: var(--toxic-green);
-        margin: 1rem;
-        padding: 0.1rem;
-        height: 30rem;
+    #main-project-container {
+        border: solid 5px black;
+        display: flex;
+        width: 90%;
+        height: 600px;
+    }
+     
+    #mellifluous-pic {
+        display: inline-flex;
         width: 100%;
-        border: 1rem solid var(--plain-white);
+        height: 100%;
+    }
+
+    #secondary-projects-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #project-container {
+        display: block;
+        border: solid 5px black;
+        width: 50%;
+    }
+
+    #weather-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #planner-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #password-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        color: white;
+        padding-bottom: 15px;
+        padding-left: 10px;
     }
 }
 
-/* Small smartphones - change the color of the borders of images */
-@media screen and (max-width: 576px) {
-    .about-img {
-        border: 1rem solid var(--concrete);
-    }
+/* Tablets */
+@media screen and (min-width: 769px) and (max-width: 992px) {
 
-    .project-1-img {
-        border: 1rem solid var(--concrete);
-    }
 
-    .project-2-img {
-        border: 1rem solid var(--concrete);
-    }
 
+    body {
+        display: block;
+        background: black;
+    }
+    
     header {
-        background-color: var(--just-black)
+        display: block;
+        background-color: black;
+        color: var(--toxic-green);
     }
+    
+    #title-container {
+        display: flex;
+        flex: row;
+        justify-content: space-evenly;
+    }
+
+    #sprite-container-left {
+        display: block;
+        border: solid 5px white;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
+
+    #second-title-container {
+        display: block;
+    }
+
+    #sprite-container-right {
+        display: block;
+        border: solid 5px white;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
+
+    nav {
+        display: flex;
+        border: solid 2px black;
+        justify-content: space-evenly;
+        color: var(--toxic-green);
+    }
+    
+    a {
+        display: block;
+        border: solid 2px black;
+        color: var(--toxic-green);
+    }
+    
+    aside {
+        display: flex;
+        flex: row;
+        border: solid 5px black;
+        align-items: center;
+        background-color: var(--ocean-blue);
+    }
+
+    #profile-pic {
+        width: 50%;
+        height: 50%;
+        border-right: solid 5px black;
+    }
+
+    #about-me-container {
+        display: flex;
+        flex-flow: column wrap;
+        width: 50%;
+    }
+
+    #upper-bar {
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }
+
+    #about-me-text {
+        display: block;
+        word-wrap: break-word;
+        border: solid 1px black;
+        width: 100%;
+        height: 100px;
+        background-color: var(--concrete);
+        color: white;
+        text-align: center;
+    }
+
+    #lower-bar {
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        border: solid 5px black;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--ocean-blue);
+    }
+
+    #main-project-container {
+        border: solid 5px black;
+        display: flex;
+        width: 90%;
+        height: 600px;
+    }
+     
+    #mellifluous-pic {
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    #secondary-projects-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #project-container {
+        display: block;
+        border: solid 5px black;
+        width: 50%;
+    }
+
+    #weather-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #planner-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #password-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        color: white;
+        padding-bottom: 15px;
+        padding-left: 10px;
+    }
+}
+
+/* Large smartphones */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+
+
+    body {
+        display: block;
+        background: black;
+    }
+    
+    header {
+        display: block;
+        background-color: black;
+        color: var(--toxic-green);
+    }
+    
+    #title-container {
+        display: flex;
+        flex: row;
+        justify-content: space-evenly;
+    }
+
+    #sprite-container-left {
+        display: block;
+        border: solid 5px white;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
+
+    #second-title-container {
+        display: block;
+    }
+
+    #sprite-container-right {
+        display: block;
+        border: solid 5px white;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
+
+    nav {
+        display: flex;
+        border: solid 2px black;
+        justify-content: space-evenly;
+        color: var(--toxic-green);
+    }
+    
+    a {
+        display: block;
+        border: solid 2px black;
+        color: var(--toxic-green);
+    }
+    
+    aside {
+        display: flex;
+        flex: row;
+        border: solid 5px black;
+        align-items: center;
+        background-color: var(--ocean-blue);
+    }
+
+    #profile-pic {
+        width: 50%;
+        height: 50%;
+        border-right: solid 5px black;
+    }
+
+    #about-me-container {
+        display: flex;
+        flex-flow: column wrap;
+        width: 50%;
+    }
+
+    #upper-bar {
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }
+
+    #about-me-text {
+        display: block;
+        word-wrap: break-word;
+        border: solid 1px black;
+        width: 100%;
+        height: 100px;
+        background-color: var(--concrete);
+        color: white;
+        text-align: center;
+    }
+
+    #lower-bar {
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        border: solid 5px black;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--ocean-blue);
+    }
+
+    #main-project-container {
+        border: solid 5px black;
+        display: flex;
+        width: 90%;
+        height: 600px;
+    }
+     
+    #mellifluous-pic {
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    #secondary-projects-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #project-container {
+        display: block;
+        border: solid 5px black;
+        width: 50%;
+    }
+
+    #weather-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #planner-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #password-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        color: white;
+        padding-bottom: 15px;
+        padding-left: 10px;
+    }
+}
+
+/* Small smartphones */
+@media screen and (max-width: 576px) {
+
+
+
+    body {
+        display: block;
+        background: black;
+    }
+    
+    header {
+        display: block;
+        background-color: black;
+        color: var(--toxic-green);
+    }
+    
+    #title-container {
+        display: flex;
+        flex: row;
+        justify-content: space-evenly;
+    }
+
+    #sprite-container-left {
+        display: block;
+        border: solid 5px white;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
+
+    #second-title-container {
+        display: block;
+    }
+
+    #sprite-container-right {
+        display: block;
+        border: solid 5px white;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
+
+    nav {
+        display: flex;
+        border: solid 2px black;
+        justify-content: space-evenly;
+        color: var(--toxic-green);
+    }
+    
+    a {
+        display: block;
+        border: solid 2px black;
+        color: var(--toxic-green);
+    }
+    
+    aside {
+        display: flex;
+        flex: row;
+        border: solid 5px black;
+        align-items: center;
+        background-color: var(--ocean-blue);
+    }
+
+    #profile-pic {
+        width: 50%;
+        height: 50%;
+        border-right: solid 5px black;
+    }
+
+    #about-me-container {
+        display: flex;
+        flex-flow: column wrap;
+        width: 50%;
+    }
+
+    #upper-bar {
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }
+
+    #about-me-text {
+        display: block;
+        word-wrap: break-word;
+        border: solid 1px black;
+        width: 100%;
+        height: 100px;
+        background-color: var(--concrete);
+        color: white;
+        text-align: center;
+    }
+
+    #lower-bar {
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        border: solid 5px black;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--ocean-blue);
+    }
+
+    #main-project-container {
+        border: solid 5px black;
+        display: flex;
+        width: 90%;
+        height: 250px;
+    }
+     
+    #mellifluous-pic {
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    #secondary-projects-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #project-container {
+        display: block;
+        border: solid 5px black;
+        width: 50%;
+    }
+
+    #weather-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #planner-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #password-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        color: white;
+        padding-bottom: 15px;
+        padding-left: 10px;
+    }
+
 }
 
 

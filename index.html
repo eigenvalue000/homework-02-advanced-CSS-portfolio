@@ -5,140 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Garrett Kegel Portfolio</title>
-    
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
+
     <header>
-        <h1>Garrett Kegel</h1>
-    </header>
-
-    <nav>
-        <a href="#about-me">About Me</a>
-        <a href="#work-examples">Work Examples</a>
-        <a href="./assets/images/Resume.pdf" download>Resume</a>
-        <a href="./assets/images/TheMovingSofaProblem.pdf" download>Writing Example</a>
-        <a href="#contact-info">Contact</a>
-    </nav>
-
-    <main>
-        <aside>
-            <div id="about-me" class="about-img">
-                <a href="https://eigenvalue000.github.io/profile-game/">
-                    <img src="./assets/images/profile-pic-test.png" alt="profile pic test" />
-                </a>
-                <h2>About Me</h2>
+        <div id="title-container">
+            <div id="sprite-container-left"></div>
+            <div id="second-title-container">
+                <h1 style="text-align: center;">Garrett Kegel</h1>
+                <h2 style="text-align: center;">Portfolio</h2>
             </div>
-            <div class="about-text">I graduated from the University of California, Davis
-                with a Bachelor of Science Degree in Mathematical
-                Analytics and Operations Research with a minor in Economics.
-                My research interests
-                include Complex Analysis, Topology, Measure Theory, Cryptography,
-                Mathematical Finance, Stochastic Processes, Modern Algebra,
-                Optimization, and much more. I am currently seeking
-                employment in the Fintech industry to combine my mathematical
-                knowledge, my technical knowledge, and my financial knowledge.
-            </div>
-        </aside>
-
-        <section>
-            <div id="work-examples" class="project-1-img">
-                <a href="https://google.com">
-                    <img src="./assets/images/crypto-bot-pic.png" alt="bot demo image" />
-
-                </a>
-            </div>
-            <br />
-
-            <div class="subsection">
-
-                <div class="project-2-img" id="mellifluousHoverPic">
-                    <a href="https://eigenvalue000.github.io/project-01/">
-                        <img src="./assets/images/mellifluous.png" alt="Mellifluous" />
-                    </a>
-                    <a href="https://github.com/eigenvalue000/project-01">
-                        <div id="githubLink">GitHub Repo</div>
-                    </a>
-
-                </div>
-
-                <div class="project-2-img">
-                    <a href="https://eigenvalue000.github.io/homework-03-password-generator/">
-                        <img src="./assets/images/password-gen-pic.png" alt="password generator image" />
-                    </a>
-                    <a href="https://github.com/eigenvalue000/homework-03-password-generator">
-                        <div id="githubLink">GitHub Repo</div>
-                    </a>
-                </div>
-
-
-
-                <div class="project-2-img">
-                    <a href="https://eigenvalue000.github.io/weather-dashboard/">
-                        <img src="./assets/images/weather-dashboard-pic.png" alt="weather dashboard image" />
-                    </a>
-                    <a href="https://github.com/eigenvalue000/weather-dashboard">
-                        <div id="githubLink">GitHub Repo</div>
-                    </a>
-
-                </div>
-
-                <div class="project-2-img">
-                    <a href="https://eigenvalue000.github.io/work-day-scheduler/">
-                        <img src="./assets/images/day-planner-pic.png" alt="day planner image" />
-                    </a>
-                    <a href="https://github.com/eigenvalue000/work-day-scheduler">
-                        <div id="githubLink">GitHub Repo</div>
-                    </a>
-
-                </div>
-
-                <div class="project-2-img">
-                    <a
-                        href="https://www.google.com/search?q=google+calculator&rlz=1C1ONGR_enUS959US959&oq=google+cacl&aqs=chrome.1.69i57j0i10i433j0i10i512l2j0i10i131i433l3j0i10j0i3i10j0i10.2675j0j7&sourceid=chrome&ie=UTF-8">
-                        <img src="./assets/images/calculator-pic.png" alt="calculator image" />
-                    </a>
-                    <a href="https://github.com/eigenvalue000">
-                        <div id="githubLink">GitHub Repo</div>
-                    </a>
-
-                </div>
-
-                <div class="project-2-img">
-                    <a href="https://eigenvalue000.github.io/homework-04-code-quiz/">
-                        <img src="./assets/images/coding-quiz.png" alt="coding quiz image" />
-                    </a>
-                    <a href="https://github.com/eigenvalue000/homework-04-code-quiz">
-                        <div id="githubLink">GitHub Repo</div>
-                    </a>
-
-                </div>
-
-            </div>
-
-
-        </section>
-    </main>
-
-    <footer>
-        <h3>Contact Info</h3>
-        <div id="contact-info">
-            E-mail : qwxzjkv20946137@gmail.com
-            <br />
-            Phone : 555-555-5555
-            <br />
-            GitHub : <a href="https://github.com/eigenvalue000">github.com/eigenvalue000</a>
-            <br />
-            Linkedin : <a
-                href="https://www.linkedin.com/in/garrett-kegel-5822b921a/">https://www.linkedin.com/in/garrett-kegel-5822b921a/</a>
+            <div id="sprite-container-right"></div>
         </div>
 
+        <nav>
+            <a href="#about-me-container">About Me</a>
+            <a href="#main-project-container">Work Examples</a>
+            <a href="./assets/images/Resume.pdf">Resume</a>
+            <a href="./assets/images/TheMovingSofaProblem.pdf">Writing Example</a>
+            <a href="#contact-info">Contact</a>
+        </nav>
+    </header>
+
+    <aside>
+        <img src="./assets/images/profile-pic-test.png" id="profile-pic">
+        <div id="about-me-container">
+            <div id="upper-bar"></div>
+            <p id="about-me-text">Hello! Welcome to my
+                portfolio page. Below, you will find examples
+                of my work.
+
+            </p>
+            <div id="lower-bar"></div>
+        </div>
+
+    </aside>
+
+    <main>
+
+        <div id="main-project-container">
+            <a href="https://eigenvalue000.github.io/project-01/" id="mellifluous-pic">
+                <img src="./assets/images/mellifluous.png" width=100% height=100%>
+            </a>
+
+        </div>
+
+
+        <div id="secondary-projects-container">
+            <div id="project-container">
+                <a href="https://eigenvalue000.github.io/weather-dashboard/" id="weather-pic">
+                    <img src="./assets/images/weather-dashboard-pic.png" width=100% height=100%>
+                </a>
+            </div>
+
+            <div id="project-container">
+                <a href="https://eigenvalue000.github.io/work-day-scheduler/" id="planner-pic">
+                    <img src="./assets/images/day-planner-pic.png" width=100% height=100%>
+                </a>
+            </div>
+
+            <div id="project-container">
+                <a href="https://eigenvalue000.github.io/homework-03-password-generator/" id="password-pic">
+                    <img src="./assets/images/password-gen-pic.png" width=100% height=100%>
+                </a>
+            </div>
+
+
+        </div>
+
+
+
+
+    </main>
+
+    <footer id="contact-info">
+        <h1>Contact Info</h1>
+        <p>Phone </p> (555) 555-5555
+        <p>E-mail </p> qwxzjkv20946137@gmail.com
+        <p>GitHub </p><a href="https://github.com/eigenvalue000">https://github.com/eigenvalue000</a>
+        <p>LinkedIn </p><a
+            href="https://www.linkedin.com/in/garrett-kegel-5822b921a/">https://www.linkedin.com/in/garrett-kegel-5822b921a/</a>
+
     </footer>
+
+  
+
+
+    <script src="./assets/js/script.js"></script>
 </body>
-
-
-
-
 
 </html>

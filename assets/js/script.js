@@ -36,7 +36,7 @@ function drawTriangle() {
         // ctx.stroke();
 
         triangleIterator++;
-        if (triangleIterator === 20) {
+        if (triangleIterator === 100) {
             ctx.clearRect(0, 0, 100, 100);
             triangleIterator = 0;
         }
@@ -68,7 +68,7 @@ function drawCircle() {
         // ctx.stroke();
 
         circleIterator++;
-        if (circleIterator === 20) {
+        if (circleIterator === 100) {
             ctx.clearRect(0, 0, 100, 100);
             circleIterator = 0;
         }

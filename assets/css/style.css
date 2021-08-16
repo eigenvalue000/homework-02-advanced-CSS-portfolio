@@ -42,9 +42,7 @@
 
     #sprite-container-left {
         display: block;
-        border: solid 5px white;
         align-self: center;
-        background-color: white;
     }
 
     #second-title-container {
@@ -53,9 +51,7 @@
 
     #sprite-container-right {
         display: block;
-        border: solid 5px white;
         align-self: center;
-        background-color: white;
     }
 
     nav {
@@ -201,7 +197,6 @@
 
     #sprite-container-left {
         display: block;
-        border: solid 5px white;
         width: 50px;
         height: 50px;
         align-self: center;
@@ -213,7 +208,6 @@
 
     #sprite-container-right {
         display: block;
-        border: solid 5px white;
         width: 50px;
         height: 50px;
         align-self: center;
@@ -362,7 +356,6 @@
 
     #sprite-container-left {
         display: block;
-        border: solid 5px white;
         width: 50px;
         height: 50px;
         align-self: center;
@@ -374,7 +367,6 @@
 
     #sprite-container-right {
         display: block;
-        border: solid 5px white;
         width: 50px;
         height: 50px;
         align-self: center;
@@ -523,7 +515,6 @@
 
     #sprite-container-left {
         display: block;
-        border: solid 5px white;
         width: 50px;
         height: 50px;
         align-self: center;
@@ -535,7 +526,6 @@
 
     #sprite-container-right {
         display: block;
-        border: solid 5px white;
         width: 50px;
         height: 50px;
         align-self: center;

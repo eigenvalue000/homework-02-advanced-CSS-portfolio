@@ -3,7 +3,7 @@ function getRandomInt(max) {
 }
 
 function getRandomColor(randomNum) {
-    var colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple'];
+    var colors = ['red', 'blue', 'green'];
     return colors[randomNum];
 }
 
@@ -19,7 +19,7 @@ function drawTriangle() {
         var y3 = getRandomInt(98)
 
         // Filled triangle
-        ctx.strokeStyle = getRandomColor(getRandomInt(5));
+        ctx.strokeStyle = getRandomColor(getRandomInt(3));
         ctx.beginPath();
         ctx.moveTo(x1, y1);
         ctx.lineTo(x2, y2);
@@ -49,7 +49,7 @@ function drawCircle() {
        
 
         // Filled triangle
-        ctx.strokeStyle = getRandomColor(getRandomInt(5));
+        ctx.strokeStyle = getRandomColor(getRandomInt(3));
         ctx.beginPath();
         
         ctx.arc(x1, y1, Math.min(canvas.width - x1, canvas.height - y1), 0, Math.PI * 2, true);

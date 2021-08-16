@@ -35,7 +35,11 @@ function drawTriangle() {
         // ctx.closePath();
         // ctx.stroke();
 
-        console.log('something')
+        triangleIterator++;
+        if (triangleIterator === 20) {
+            ctx.clearRect(0, 0, 100, 100);
+            triangleIterator = 0;
+        }
     }
     
 }
@@ -63,9 +67,16 @@ function drawCircle() {
         // ctx.closePath();
         // ctx.stroke();
 
-        console.log('something')
+        circleIterator++;
+        if (circleIterator === 20) {
+            ctx.clearRect(0, 0, 100, 100);
+            circleIterator = 0;
+        }
     }
 }
+
+var triangleIterator = 0;
+var circleIterator = 0;
 
 setInterval(drawTriangle, 1000);
 setInterval(drawCircle, 1000);

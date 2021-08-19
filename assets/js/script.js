@@ -80,3 +80,5 @@ var circleIterator = 0;
 
 setInterval(drawTriangle, 1000);
 setInterval(drawCircle, 1000);
+
+

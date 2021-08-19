@@ -51,471 +51,6 @@
 
     #sprite-container-right {
         display: block;
-        align-self: center;
-    }
-
-    nav {
-        display: flex;
-        border: solid 2px black;
-        justify-content: space-evenly;
-        color: var(--toxic-green);
-    }
-    
-    a {
-        display: block;
-        border: solid 2px black;
-        color: var(--toxic-green);
-    }
-    
-    aside {
-        display: flex;
-        flex: row;
-        border: solid 5px black;
-        align-items: center;
-        background-color: var(--ocean-blue);
-    }
-
-    #profile-pic {
-        width: 50%;
-        height: 50%;
-        border-right: solid 5px black;
-    }
-
-    #about-me-container {
-        display: flex;
-        flex-flow: column wrap;
-        width: 50%;
-    }
-
-    #upper-bar {
-        display: block;
-        background-color: black;
-        width: 100%;
-        height: 50px;
-    }
-
-    #about-me-text {
-        display: block;
-        word-wrap: break-word;
-        border: solid 1px black;
-        width: 100%;
-        height: 100px;
-        background-color: var(--concrete);
-        color: white;
-        text-align: center;
-    }
-
-    #lower-bar {
-        display: block;
-        background-color: black;
-        width: 100%;
-        height: 50px;
-    }
-
-    main {
-        display: flex;
-        flex-flow: row wrap;
-        border: solid 5px black;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--ocean-blue);
-    }
-
-    #main-project-container {
-        border: solid 5px black;
-        display: flex;
-        width: 90%;
-        height: 600px;
-    }
-     
-    #mellifluous-pic {
-        display: inline-flex;
-        width: 100%;
-        height: 100%;
-    }
-
-    #secondary-projects-container {
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    #project-container {
-        display: block;
-        border: solid 5px black;
-        width: 50%;
-    }
-
-    #weather-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #planner-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #password-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    footer {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        color: white;
-        padding-bottom: 15px;
-        padding-left: 10px;
-    }
-}
-
-/* Tablets */
-@media screen and (min-width: 769px) and (max-width: 992px) {
-
-
-
-    body {
-        display: block;
-        background: black;
-    }
-    
-    header {
-        display: block;
-        background-color: black;
-        color: var(--toxic-green);
-    }
-    
-    #title-container {
-        display: flex;
-        flex: row;
-        justify-content: space-evenly;
-    }
-
-    #sprite-container-left {
-        display: block;
-        align-self: center;
-    }
-
-    #second-title-container {
-        display: block;
-    }
-
-    #sprite-container-right {
-        display: block;
-        align-self: center;
-    }
-
-    nav {
-        display: flex;
-        border: solid 2px black;
-        justify-content: space-evenly;
-        color: var(--toxic-green);
-    }
-    
-    a {
-        display: block;
-        border: solid 2px black;
-        color: var(--toxic-green);
-    }
-    
-    aside {
-        display: flex;
-        flex: row;
-        border: solid 5px black;
-        align-items: center;
-        background-color: var(--ocean-blue);
-    }
-
-    #profile-pic {
-        width: 50%;
-        height: 50%;
-        border-right: solid 5px black;
-    }
-
-    #about-me-container {
-        display: flex;
-        flex-flow: column wrap;
-        width: 50%;
-    }
-
-    #upper-bar {
-        display: block;
-        background-color: black;
-        width: 100%;
-        height: 50px;
-    }
-
-    #about-me-text {
-        display: block;
-        word-wrap: break-word;
-        border: solid 1px black;
-        width: 100%;
-        height: 200px;
-        background-color: grey;
-        color: white;
-        text-align: center;
-    }
-
-    #lower-bar {
-        display: block;
-        background-color: black;
-        width: 100%;
-        height: 50px;
-    }
-
-    main {
-        display: flex;
-        flex-flow: row wrap;
-        border: solid 5px black;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--ocean-blue);
-    }
-
-    #main-project-container {
-        border: solid 5px black;
-        display: flex;
-        width: 90%;
-        height: 600px;
-    }
-     
-    #mellifluous-pic {
-        display: inline-flex;
-        width: 100%;
-        height: 100%;
-    }
-
-    #secondary-projects-container {
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    #project-container {
-        display: block;
-        border: solid 5px black;
-        width: 50%;
-    }
-
-    #weather-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #planner-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #password-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    footer {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        color: white;
-        padding-bottom: 15px;
-        padding-left: 10px;
-    }
-}
-
-/* Large smartphones */
-@media screen and (min-width: 577px) and (max-width: 768px) {
-
-
-
-    body {
-        display: block;
-        background: black;
-    }
-    
-    header {
-        display: block;
-        background-color: black;
-        color: var(--toxic-green);
-    }
-    
-    #title-container {
-        display: flex;
-        flex: row;
-        justify-content: space-evenly;
-    }
-
-    #sprite-container-left {
-        display: block;
-        align-self: center;
-    }
-
-    #second-title-container {
-        display: block;
-    }
-
-    #sprite-container-right {
-        display: block;
-        align-self: center;
-    }
-
-    nav {
-        display: flex;
-        border: solid 2px black;
-        justify-content: space-evenly;
-        color: var(--toxic-green);
-    }
-    
-    a {
-        display: block;
-        border: solid 2px black;
-        color: var(--toxic-green);
-    }
-    
-    aside {
-        display: flex;
-        flex: row;
-        border: solid 5px black;
-        align-items: center;
-        background-color: var(--ocean-blue);
-    }
-
-    #profile-pic {
-        width: 50%;
-        height: 50%;
-        border-right: solid 5px black;
-    }
-
-    #about-me-container {
-        display: flex;
-        flex-flow: column wrap;
-        width: 50%;
-    }
-
-    #upper-bar {
-        display: block;
-        background-color: black;
-        width: 100%;
-        height: 50px;
-    }
-
-    #about-me-text {
-        display: block;
-        word-wrap: break-word;
-        border: solid 1px black;
-        width: 100%;
-        height: 300px;
-        background-color: grey;
-        color: white;
-        text-align: center;
-    }
-
-    #lower-bar {
-        display: block;
-        background-color: black;
-        width: 100%;
-        height: 50px;
-    }
-
-    main {
-        display: flex;
-        flex-flow: row wrap;
-        border: solid 5px black;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--ocean-blue);
-    }
-
-    #main-project-container {
-        border: solid 5px black;
-        display: flex;
-        width: 90%;
-        height: 600px;
-    }
-     
-    #mellifluous-pic {
-        display: inline-flex;
-        width: 100%;
-        height: 100%;
-    }
-
-    #secondary-projects-container {
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    #project-container {
-        display: block;
-        border: solid 5px black;
-        width: 50%;
-    }
-
-    #weather-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #planner-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #password-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    footer {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        color: white;
-        padding-bottom: 15px;
-        padding-left: 10px;
-    }
-}
-
-/* Small smartphones */
-@media screen and (max-width: 576px) {
-
-
-
-    body {
-        display: block;
-        background: black;
-    }
-    
-    header {
-        display: block;
-        background-color: black;
-        color: var(--toxic-green);
-    }
-    
-    #title-container {
-        display: flex;
-        flex: row;
-        justify-content: space-evenly;
-    }
-
-    #sprite-container-left {
-        display: block;
-        align-self: center;
-    }
-
-    #second-title-container {
-        display: block;
-    }
-
-    #sprite-container-right {
-        display: block;
 
         align-self: center;
     }
@@ -527,24 +62,18 @@
         color: var(--toxic-green);
     }
     
-    a {
-        display: block;
-        border: solid 2px black;
-        color: var(--toxic-green);
-    }
-    
     aside {
         display: flex;
         flex: row;
         border: solid 5px black;
         align-items: center;
-        background-color: var(--ocean-blue);
     }
 
     #profile-pic {
         width: 50%;
         height: 50%;
-        border-right: solid 5px black;
+        border-radius: 10px;
+        border: solid 5px white;
     }
 
     #about-me-container {
@@ -553,12 +82,6 @@
         width: 50%;
     }
 
-    #upper-bar {
-        display: block;
-        background-color: black;
-        width: 100%;
-        height: 50px;
-    }
 
     #about-me-text {
         display: block;
@@ -581,34 +104,48 @@
     main {
         display: flex;
         flex-flow: row wrap;
-        border: solid 5px black;
         justify-content: center;
         align-items: center;
-        background-color: var(--ocean-blue);
     }
 
     #main-project-container {
-        border: solid 5px black;
         display: flex;
-        width: 90%;
-        height: 250px;
+        border: solid 5px black;
     }
-     
+
+    #main-project-link {
+        display: block;
+    }
+
     #mellifluous-pic {
-        display: inline-flex;
-        width: 100%;
+        display: block;
         height: 100%;
+        width: 100%;
+        border: solid 5px white;
+        border-radius: 10px;
+    }
+
+    #github-main-link {
+        display: inline;
+        border: solid 5px white;
+        border-radius: 10px;
+        position: absolute;
+        background-color: white;
+        color: black;
     }
 
     #secondary-projects-container {
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
     }
 
     #project-container {
-        display: block;
-        border: solid 5px black;
-        width: 50%;
+        display: flex;
+        border: solid 5px white;
+        border-radius: 10px;
+        width: 40%;
+        margin: 4px;
     }
 
     #weather-pic {
@@ -627,6 +164,515 @@
         display: block;
         width: 100%;
         height: 100%;
+    }
+
+    #github-link {
+        display: inline;
+        border: solid 5px white;
+        border-radius: 10px;
+        position: absolute;
+        background-color: white;
+        color: black;
+        align-self: flex-end;
+        width: 20%;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        color: white;
+        padding-bottom: 15px;
+        padding-left: 10px;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        display: block;
+        background: black;
+    }
+    
+    header {
+        display: block;
+        background-color: black;
+        color: var(--toxic-green);
+    }
+    
+    #title-container {
+        display: flex;
+        flex: row;
+        justify-content: space-evenly;
+    }
+
+    #sprite-container-left {
+        display: block;
+        align-self: center;
+    }
+
+    #second-title-container {
+        display: block;
+    }
+
+    #sprite-container-right {
+        display: block;
+
+        align-self: center;
+    }
+
+    nav {
+        display: flex;
+        border: solid 2px black;
+        justify-content: space-evenly;
+        color: var(--toxic-green);
+    }
+    
+    aside {
+        display: flex;
+        flex: row;
+        border: solid 5px black;
+        align-items: center;
+    }
+
+    #profile-pic {
+        width: 50%;
+        height: 50%;
+        border-radius: 10px;
+        border: solid 5px white;
+    }
+
+    #about-me-container {
+        display: flex;
+        flex-flow: column wrap;
+        width: 50%;
+    }
+
+
+    #about-me-text {
+        display: block;
+        word-wrap: break-word;
+        border: solid 1px black;
+        width: 100%;
+        height: auto;
+        background-color: grey;
+        color: white;
+        text-align: center;
+    }
+
+    #lower-bar {
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-project-container {
+        display: flex;
+        border: solid 5px black;
+    }
+
+    #main-project-link {
+        display: block;
+    }
+
+    #mellifluous-pic {
+        display: block;
+        height: 100%;
+        width: 100%;
+        border: solid 5px white;
+        border-radius: 10px;
+    }
+
+    #github-main-link {
+        display: inline;
+        border: solid 5px white;
+        border-radius: 10px;
+        position: absolute;
+        background-color: white;
+        color: black;
+    }
+
+    #secondary-projects-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    #project-container {
+        display: flex;
+        border: solid 5px white;
+        border-radius: 10px;
+        width: 40%;
+        margin: 4px;
+    }
+
+    #weather-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #planner-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #password-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #github-link {
+        display: inline;
+        border: solid 5px white;
+        border-radius: 10px;
+        position: absolute;
+        background-color: white;
+        color: black;
+        align-self: flex-end;
+        width: 20%;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        color: white;
+        padding-bottom: 15px;
+        padding-left: 10px;
+    }
+}
+
+/* Large smartphones */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    body {
+        display: block;
+        background: black;
+    }
+    
+    header {
+        display: block;
+        background-color: black;
+        color: var(--toxic-green);
+    }
+    
+    #title-container {
+        display: flex;
+        flex: row;
+        justify-content: space-evenly;
+    }
+
+    #sprite-container-left {
+        display: block;
+        align-self: center;
+    }
+
+    #second-title-container {
+        display: block;
+    }
+
+    #sprite-container-right {
+        display: block;
+
+        align-self: center;
+    }
+
+    nav {
+        display: flex;
+        border: solid 2px black;
+        justify-content: space-evenly;
+        color: var(--toxic-green);
+    }
+    
+    aside {
+        display: flex;
+        flex: row;
+        border: solid 5px black;
+        align-items: center;
+    }
+
+    #profile-pic {
+        width: 50%;
+        height: 50%;
+        border-radius: 10px;
+        border: solid 5px white;
+    }
+
+    #about-me-container {
+        display: flex;
+        flex-flow: column wrap;
+        width: 50%;
+    }
+
+
+    #about-me-text {
+        display: block;
+        word-wrap: break-word;
+        border: solid 1px black;
+        width: 100%;
+        height: auto;
+        background-color: grey;
+        color: white;
+        text-align: center;
+    }
+
+    #lower-bar {
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-project-container {
+        display: flex;
+        border: solid 5px black;
+    }
+
+    #main-project-link {
+        display: block;
+    }
+
+    #mellifluous-pic {
+        display: block;
+        height: 100%;
+        width: 100%;
+        border: solid 5px white;
+        border-radius: 10px;
+    }
+
+    #github-main-link {
+        display: inline;
+        border: solid 5px white;
+        border-radius: 10px;
+        position: absolute;
+        background-color: white;
+        color: black;
+    }
+
+    #secondary-projects-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    #project-container {
+        display: flex;
+        border: solid 5px white;
+        border-radius: 10px;
+        width: 40%;
+        margin: 4px;
+    }
+
+    #weather-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #planner-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #password-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #github-link {
+        display: inline;
+        border: solid 5px white;
+        border-radius: 10px;
+        position: absolute;
+        background-color: white;
+        color: black;
+        align-self: flex-end;
+        width: 20%;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        color: white;
+        padding-bottom: 15px;
+        padding-left: 10px;
+    }
+}
+
+/* Small smartphones */
+@media screen and (max-width: 576px) {
+    body {
+        display: block;
+        background: black;
+    }
+    
+    header {
+        display: block;
+        background-color: black;
+        color: var(--toxic-green);
+    }
+    
+    #title-container {
+        display: flex;
+        flex: row;
+        justify-content: space-evenly;
+    }
+
+    #sprite-container-left {
+        display: block;
+        align-self: center;
+    }
+
+    #second-title-container {
+        display: block;
+    }
+
+    #sprite-container-right {
+        display: block;
+
+        align-self: center;
+    }
+
+    nav {
+        display: flex;
+        border: solid 2px black;
+        justify-content: space-evenly;
+        color: var(--toxic-green);
+    }
+    
+    aside {
+        display: flex;
+        flex: row;
+        border: solid 5px black;
+        align-items: center;
+    }
+
+    #profile-pic {
+        width: 50%;
+        height: 50%;
+        border-radius: 10px;
+        border: solid 5px white;
+    }
+
+    #about-me-container {
+        display: flex;
+        flex-flow: column wrap;
+        width: 50%;
+    }
+
+
+    #about-me-text {
+        display: block;
+        word-wrap: break-word;
+        border: solid 1px black;
+        width: 100%;
+        height: auto;
+        background-color: grey;
+        color: white;
+        text-align: center;
+    }
+
+    #lower-bar {
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-project-container {
+        display: flex;
+        border: solid 5px black;
+    }
+
+    #main-project-link {
+        display: block;
+    }
+
+    #mellifluous-pic {
+        display: block;
+        height: 100%;
+        width: 100%;
+        border: solid 5px white;
+        border-radius: 10px;
+    }
+
+    #github-main-link {
+        display: inline;
+        border: solid 5px white;
+        border-radius: 10px;
+        position: absolute;
+        background-color: white;
+        color: black;
+    }
+
+    #secondary-projects-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    #project-container {
+        display: flex;
+        border: solid 5px white;
+        border-radius: 10px;
+        width: 40%;
+        margin: 4px;
+    }
+
+    #weather-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #planner-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #password-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #github-link {
+        display: inline;
+        border: solid 5px white;
+        border-radius: 10px;
+        position: absolute;
+        background-color: white;
+        color: black;
+        align-self: flex-end;
+        width: 20%;
     }
 
     footer {

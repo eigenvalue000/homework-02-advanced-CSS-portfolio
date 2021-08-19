@@ -25,165 +25,263 @@
 @media screen and (min-width: 993px) {
     body {
         display: block;
-        background: black;
+        background-color: black;
+        color: green;
     }
     
     header {
-        display: block;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
         background-color: black;
-        color: var(--toxic-green);
     }
     
-    #title-container {
+    #title-element {
         display: flex;
         flex: row;
-        justify-content: space-evenly;
+        height: 110px;
     }
 
-    #sprite-container-left {
+    #left-title {
         display: block;
+        border: solid 5px white;
+        border-radius: 10px;
         align-self: center;
+        margin-right: 30px;
+        height: 50%;
+        width: 100%;
     }
 
-    #second-title-container {
-        display: block;
+    #center-title {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
-    #sprite-container-right {
+    #title {
         display: block;
+        font-size: 50px;
+        white-space: nowrap;
+        text-align: center;
+    }
 
+    #subtitle {
+        display: block;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #right-title{
+        display: block;
+        border: solid 5px white;
+        border-radius: 10px;
         align-self: center;
+        margin-left: 30px;
+        height: 50%;
+        width: 100%;
     }
 
     nav {
         display: flex;
-        border: solid 2px black;
-        justify-content: space-evenly;
-        color: var(--toxic-green);
-    }
-    
-    aside {
-        display: flex;
         flex: row;
-        border: solid 5px black;
-        align-items: center;
-    }
-
-    #profile-pic {
-        width: 50%;
-        height: 50%;
-        border-radius: 10px;
-        border: solid 5px white;
-    }
-
-    #about-me-container {
-        display: flex;
-        flex-flow: column wrap;
-        width: 50%;
-    }
-
-
-    #about-me-text {
-        display: block;
-        word-wrap: break-word;
-        border: solid 1px black;
-        width: 100%;
-        height: auto;
-        background-color: grey;
-        color: white;
-        text-align: center;
-    }
-
-    #lower-bar {
-        display: block;
         background-color: black;
-        width: 100%;
-        height: 50px;
+        justify-content: space-evenly;
+        color: black;
+        margin: 5px;
+    }
+
+    #nav-link {
+        display: flex;
+        flex-flow: row wrap;
+        border: solid 5px white;
+        border-radius: 10px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
+        text-align: center;
     }
 
     main {
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
     }
 
-    #main-project-container {
+    aside {
         display: flex;
-        border: solid 5px black;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+
+    #profile-pic {
+        display: block;
+        border: solid 5px white;
+        border-radius: 10px;
+        width: 50%;
+        height: 50%;
+        align-self: center;
+    }
+
+    #about-text {
+        display: block;
+        border: solid 5px white;
+        border-radius: 10px;
+        width: 50%;
+        height: auto;
+        align-self: center;
+        margin: 1px;
+        background: white;
+        color: black;
+    }
+
+    #main-project {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 30%;
+    }
+
+    #main-project-card {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        border: solid 5px white;
+        border-radius: 10px;
+        background: white;
+        width: 90%;
+        height: 80%;
+        margin-top: 5px;
     }
 
     #main-project-link {
-        display: block;
+       display: flex;
+       justify-content: center;
+       height: 80%;
     }
 
-    #mellifluous-pic {
+    #main-project-pic {
         display: block;
-        height: 100%;
-        width: 100%;
         border: solid 5px white;
         border-radius: 10px;
+        width: 90%;
+        height: 80%;
     }
 
-    #github-main-link {
-        display: inline;
-        border: solid 5px white;
-        border-radius: 10px;
-        position: absolute;
-        background-color: white;
+    #main-project-text {
+        display: block;
         color: black;
-    }
-
-    #secondary-projects-container {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-
-    #project-container {
-        display: flex;
-        border: solid 5px white;
-        border-radius: 10px;
-        width: 40%;
-        margin: 4px;
-    }
-
-    #weather-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #planner-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #password-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
     }
 
     #github-link {
-        display: inline;
-        border: solid 5px white;
-        border-radius: 10px;
-        position: absolute;
-        background-color: white;
+        display: block;
         color: black;
-        align-self: flex-end;
-        width: 20%;
     }
 
-    footer {
+    #secondary-projects {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+    }
+
+    #project-card {
+        display: flex;
+        flex-flow: row wrap;
+        border: solid 5px white;
+        border-radius: 10px;
+        background: white;
+        width: 20%;
+        height: 80%;
+        margin: 20px;
+    }
+
+    #secondary-project-link {
+        display: flex;
+        justify-content: center;
+        height: 80%;
+    }
+
+    #secondary-project-pic {
+        display: flex;
+        width: 100%;
+        height: auto;
+        border: solid 5px white;
+        border-radius: 10px;
+    }
+
+    #secondary-project-text {
+        display: block;
+    }
+
+    #contact-info {
+        display: block;
+        margin: 20px;
+    }
+
+    #contact-title {
+        display: flex;
+        border: solid 5px white;
+        border-radius: 10px;
+        justify-content: center;
+        color: black;
+        background-color: white;
+    }
+
+    #contact-container {
         display: flex;
         flex-flow: column wrap;
+        
+    }
+
+    #phone-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
         align-items: center;
-        color: white;
-        padding-bottom: 15px;
-        padding-left: 10px;
+        margin: 10px;
+    }
+
+    #email-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #github-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #linkedin-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
     }
 }
 
@@ -191,165 +289,251 @@
 @media screen and (min-width: 769px) and (max-width: 992px) {
     body {
         display: block;
-        background: black;
+        background-color: black;
+        color: green;
     }
     
     header {
-        display: block;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
         background-color: black;
-        color: var(--toxic-green);
     }
     
-    #title-container {
+    #title-element {
         display: flex;
         flex: row;
-        justify-content: space-evenly;
+        height: 110px;
     }
 
-    #sprite-container-left {
+    #left-title {
         display: block;
+        border: solid 2px white;
+        border-radius: 10px;
         align-self: center;
+        margin-right: 30px;
+        height: 50%;
+        width: 100%;
     }
 
-    #second-title-container {
-        display: block;
+    #center-title {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
-    #sprite-container-right {
+    #title {
         display: block;
+        white-space: nowrap;
+        font-size: 20px;
+        text-align: center;
+    }
 
+    #subtitle {
+        display: block;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #right-title{
+        display: block;
+        border: solid 2px white;
+        border-radius: 10px;
         align-self: center;
+        margin-left: 30px;
+        height: 50%;
+        width: 100%;
     }
 
     nav {
         display: flex;
-        border: solid 2px black;
+        flex: row;
+        background-color: black;
         justify-content: space-evenly;
-        color: var(--toxic-green);
+        color: black;
+        margin: 5px;
     }
-    
+
+    #nav-link {
+        display: flex;
+        flex-flow: row wrap;
+        border: solid 5px white;
+        border-radius: 10px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
+        text-align: center;
+    }
+
     aside {
         display: flex;
-        flex: row;
-        border: solid 5px black;
         align-items: center;
     }
 
     #profile-pic {
+        display: block;
+        border: solid 5px white;
+        border-radius: 10px;
         width: 50%;
         height: 50%;
-        border-radius: 10px;
-        border: solid 5px white;
     }
 
-    #about-me-container {
+    #about-text {
+        display: block;
+        border: solid 5px white;
+        border-radius: 10px;
+        width: 50%;
+        height: auto;
+        margin: 5px;
+        background: white;
+        color: black;
+    }
+
+    #main-project {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #main-project-card {
         display: flex;
         flex-flow: column wrap;
-        width: 50%;
-    }
-
-
-    #about-me-text {
-        display: block;
-        word-wrap: break-word;
-        border: solid 1px black;
-        width: 100%;
-        height: auto;
-        background-color: grey;
-        color: white;
-        text-align: center;
-    }
-
-    #lower-bar {
-        display: block;
-        background-color: black;
-        width: 100%;
-        height: 50px;
-    }
-
-    main {
-        display: flex;
-        flex-flow: row wrap;
         justify-content: center;
-        align-items: center;
-    }
-
-    #main-project-container {
-        display: flex;
-        border: solid 5px black;
+        border: solid 5px white;
+        border-radius: 10px;
+        background: white;
+        width: 90%;
+        height: 80%;
+        margin-top: 5px;
     }
 
     #main-project-link {
-        display: block;
+       display: flex;
+       justify-content: center;
+       height: 80%;
     }
 
-    #mellifluous-pic {
+    #main-project-pic {
         display: block;
-        height: 100%;
-        width: 100%;
         border: solid 5px white;
         border-radius: 10px;
+        width: 90%;
+        height: 80%;
     }
 
-    #github-main-link {
-        display: inline;
-        border: solid 5px white;
-        border-radius: 10px;
-        position: absolute;
-        background-color: white;
+    #main-project-text {
+        display: block;
         color: black;
     }
 
-    #secondary-projects-container {
+    #github-link {
+        display: block;
+        color: black;
+    }
+
+    #secondary-projects {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
     }
 
-    #project-container {
+    #project-card {
+        display: flex;
+        flex-flow: row wrap;
+        border: solid 5px white;
+        border-radius: 10px;
+        background: white;
+        width: 47%;
+        height: 100%;
+        margin: 5px;
+    }
+
+    #secondary-project-link {
+        display: flex;
+        justify-content: center;
+        height: 80%;
+    }
+
+    #secondary-project-pic {
+        display: flex;
+        width: 100%;
+        height: auto;
+        border: solid 5px white;
+        border-radius: 10px;
+    }
+
+    #secondary-project-text {
+        display: block;
+    }
+
+    #contact-info {
+        display: block;
+        margin: 20px;
+    }
+
+    #contact-title {
         display: flex;
         border: solid 5px white;
         border-radius: 10px;
-        width: 40%;
-        margin: 4px;
-    }
-
-    #weather-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #planner-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #password-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #github-link {
-        display: inline;
-        border: solid 5px white;
-        border-radius: 10px;
-        position: absolute;
-        background-color: white;
+        justify-content: center;
         color: black;
-        align-self: flex-end;
-        width: 20%;
+        background-color: white;
     }
 
-    footer {
+    #contact-container {
         display: flex;
         flex-flow: column wrap;
+        
+    }
+
+    #phone-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
         align-items: center;
-        color: white;
-        padding-bottom: 15px;
-        padding-left: 10px;
+        margin: 10px;
+    }
+
+    #email-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #github-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #linkedin-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
     }
 }
 
@@ -357,165 +541,251 @@
 @media screen and (min-width: 577px) and (max-width: 768px) {
     body {
         display: block;
-        background: black;
+        background-color: black;
+        color: green;
     }
     
     header {
-        display: block;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
         background-color: black;
-        color: var(--toxic-green);
     }
     
-    #title-container {
+    #title-element {
         display: flex;
         flex: row;
-        justify-content: space-evenly;
+        height: 110px;
     }
 
-    #sprite-container-left {
+    #left-title {
         display: block;
+        border: solid 2px white;
+        border-radius: 10px;
         align-self: center;
+        margin-right: 30px;
+        height: 50%;
+        width: 100%;
     }
 
-    #second-title-container {
-        display: block;
+    #center-title {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
-    #sprite-container-right {
+    #title {
         display: block;
+        white-space: nowrap;
+        font-size: 20px;
+        text-align: center;
+    }
 
+    #subtitle {
+        display: block;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #right-title{
+        display: block;
+        border: solid 2px white;
+        border-radius: 10px;
         align-self: center;
+        margin-left: 30px;
+        height: 50%;
+        width: 100%;
     }
 
     nav {
         display: flex;
-        border: solid 2px black;
+        flex: row;
+        background-color: black;
         justify-content: space-evenly;
-        color: var(--toxic-green);
+        color: black;
+        margin: 5px;
     }
-    
+
+    #nav-link {
+        display: flex;
+        flex-flow: row wrap;
+        border: solid 5px white;
+        border-radius: 10px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
+        text-align: center;
+    }
+
     aside {
         display: flex;
-        flex: row;
-        border: solid 5px black;
         align-items: center;
     }
 
     #profile-pic {
+        display: block;
+        border: solid 5px white;
+        border-radius: 10px;
         width: 50%;
         height: 50%;
-        border-radius: 10px;
-        border: solid 5px white;
     }
 
-    #about-me-container {
+    #about-text {
+        display: block;
+        border: solid 5px white;
+        border-radius: 10px;
+        width: 50%;
+        height: auto;
+        margin: 5px;
+        background: white;
+        color: black;
+    }
+
+    #main-project {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #main-project-card {
         display: flex;
         flex-flow: column wrap;
-        width: 50%;
-    }
-
-
-    #about-me-text {
-        display: block;
-        word-wrap: break-word;
-        border: solid 1px black;
-        width: 100%;
-        height: auto;
-        background-color: grey;
-        color: white;
-        text-align: center;
-    }
-
-    #lower-bar {
-        display: block;
-        background-color: black;
-        width: 100%;
-        height: 50px;
-    }
-
-    main {
-        display: flex;
-        flex-flow: row wrap;
         justify-content: center;
-        align-items: center;
-    }
-
-    #main-project-container {
-        display: flex;
-        border: solid 5px black;
+        border: solid 5px white;
+        border-radius: 10px;
+        background: white;
+        width: 90%;
+        height: 80%;
+        margin-top: 5px;
     }
 
     #main-project-link {
-        display: block;
+       display: flex;
+       justify-content: center;
+       height: 80%;
     }
 
-    #mellifluous-pic {
+    #main-project-pic {
         display: block;
-        height: 100%;
-        width: 100%;
         border: solid 5px white;
         border-radius: 10px;
+        width: 90%;
+        height: 80%;
     }
 
-    #github-main-link {
-        display: inline;
-        border: solid 5px white;
-        border-radius: 10px;
-        position: absolute;
-        background-color: white;
+    #main-project-text {
+        display: block;
         color: black;
     }
 
-    #secondary-projects-container {
+    #github-link {
+        display: block;
+        color: black;
+    }
+
+    #secondary-projects {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
     }
 
-    #project-container {
+    #project-card {
+        display: flex;
+        flex-flow: row wrap;
+        border: solid 5px white;
+        border-radius: 10px;
+        background: white;
+        width: 47%;
+        height: 100%;
+        margin: 5px;
+    }
+
+    #secondary-project-link {
+        display: flex;
+        justify-content: center;
+        height: 80%;
+    }
+
+    #secondary-project-pic {
+        display: flex;
+        width: 100%;
+        height: auto;
+        border: solid 5px white;
+        border-radius: 10px;
+    }
+
+    #secondary-project-text {
+        display: block;
+    }
+
+    #contact-info {
+        display: block;
+        margin: 20px;
+    }
+
+    #contact-title {
         display: flex;
         border: solid 5px white;
         border-radius: 10px;
-        width: 40%;
-        margin: 4px;
-    }
-
-    #weather-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #planner-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #password-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #github-link {
-        display: inline;
-        border: solid 5px white;
-        border-radius: 10px;
-        position: absolute;
-        background-color: white;
+        justify-content: center;
         color: black;
-        align-self: flex-end;
-        width: 20%;
+        background-color: white;
     }
 
-    footer {
+    #contact-container {
         display: flex;
         flex-flow: column wrap;
+        
+    }
+
+    #phone-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
         align-items: center;
-        color: white;
-        padding-bottom: 15px;
-        padding-left: 10px;
+        margin: 10px;
+    }
+
+    #email-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #github-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #linkedin-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
     }
 }
 
@@ -523,172 +793,252 @@
 @media screen and (max-width: 576px) {
     body {
         display: block;
-        background: black;
+        background-color: black;
+        color: green;
     }
     
     header {
-        display: block;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
         background-color: black;
-        color: var(--toxic-green);
     }
     
-    #title-container {
+    #title-element {
         display: flex;
         flex: row;
-        justify-content: space-evenly;
+        height: 110px;
     }
 
-    #sprite-container-left {
+    #left-title {
         display: block;
-        align-self: center;
-        border: solid 5px white;
+        border: solid 2px white;
         border-radius: 10px;
-    }
-
-    #second-title-container {
-        display: block;
-    }
-
-    #sprite-container-right {
-        display: block;
         align-self: center;
-        border: solid 5px white;
+        margin-right: 30px;
+        height: 50%;
+        width: 100%;
+    }
+
+    #center-title {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #title {
+        display: block;
+        white-space: nowrap;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #subtitle {
+        display: block;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #right-title{
+        display: block;
+        border: solid 2px white;
         border-radius: 10px;
+        align-self: center;
+        margin-left: 30px;
+        height: 50%;
+        width: 100%;
     }
 
     nav {
         display: flex;
-        border: solid 2px black;
+        flex: row;
+        background-color: black;
         justify-content: space-evenly;
-        color: var(--toxic-green);
+        color: black;
+        margin: 5px;
     }
-    
+
+    #nav-link {
+        display: flex;
+        flex-flow: row wrap;
+        border: solid 5px white;
+        border-radius: 10px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
+        text-align: center;
+    }
+
     aside {
         display: flex;
-        flex: row;
-        border: solid 5px black;
         align-items: center;
     }
 
     #profile-pic {
+        display: block;
+        border: solid 5px white;
+        border-radius: 10px;
         width: 50%;
         height: 50%;
-        border-radius: 10px;
-        border: solid 5px white;
     }
 
-    #about-me-container {
+    #about-text {
+        display: block;
+        border: solid 5px white;
+        border-radius: 10px;
+        width: 50%;
+        height: auto;
+        margin: 5px;
+        background: white;
+        color: black;
+    }
+
+    #main-project {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #main-project-card {
         display: flex;
         flex-flow: column wrap;
-        width: 50%;
-    }
-
-
-    #about-me-text {
-        display: block;
-        word-wrap: break-word;
+        justify-content: center;
         border: solid 5px white;
         border-radius: 10px;
-        width: 100%;
-        height: auto;
-        background-color: grey;
-        color: white;
-        text-align: center;
-        margin: 5px;
-    }
-
-    #lower-bar {
-        display: block;
-        background-color: black;
-        width: 100%;
-        height: 50px;
-    }
-
-    main {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #main-project-container {
-        display: flex;
-        border: solid 5px black;
+        background: white;
+        width: 90%;
+        height: 80%;
+        margin-top: 5px;
     }
 
     #main-project-link {
-        display: block;
+       display: flex;
+       justify-content: center;
+       height: 80%;
     }
 
-    #mellifluous-pic {
+    #main-project-pic {
         display: block;
-        height: 100%;
-        width: 100%;
         border: solid 5px white;
         border-radius: 10px;
+        width: 90%;
+        height: 80%;
     }
 
-    #github-main-link {
-        display: inline;
-        border: solid 5px white;
-        border-radius: 10px;
-        position: absolute;
-        background-color: white;
+    #main-project-text {
+        display: block;
         color: black;
     }
 
-    #secondary-projects-container {
+    #github-link {
+        display: block;
+        color: black;
+    }
+
+    #secondary-projects {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
     }
 
-    #project-container {
+    #project-card {
+        display: flex;
+        flex-flow: row wrap;
+        border: solid 5px white;
+        border-radius: 10px;
+        background: white;
+        width: 47%;
+        height: 100%;
+        margin: 5px;
+    }
+
+    #secondary-project-link {
+        display: flex;
+        justify-content: center;
+        height: 80%;
+    }
+
+    #secondary-project-pic {
+        display: flex;
+        width: 100%;
+        height: auto;
+        border: solid 5px white;
+        border-radius: 10px;
+    }
+
+    #secondary-project-text {
+        display: block;
+    }
+
+    #contact-info {
+        display: block;
+        margin: 20px;
+    }
+
+    #contact-title {
         display: flex;
         border: solid 5px white;
         border-radius: 10px;
-        width: 40%;
-        margin: 4px;
-    }
-
-    #weather-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #planner-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #password-pic {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    #github-link {
-        display: inline;
-        border: solid 5px white;
-        border-radius: 10px;
-        position: absolute;
-        background-color: white;
+        justify-content: center;
         color: black;
-        align-self: flex-end;
-        width: 20%;
+        background-color: white;
     }
 
-    footer {
+    #contact-container {
         display: flex;
         flex-flow: column wrap;
-        align-items: center;
-        color: white;
-        padding-bottom: 15px;
-        padding-left: 10px;
+        
     }
 
+    #phone-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #email-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #github-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #linkedin-container {
+        display: flex;
+        flex-direction: column;
+        border: solid 5px white;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
 }
 
 

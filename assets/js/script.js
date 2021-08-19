@@ -8,15 +8,15 @@ function getRandomColor(randomNum) {
 }
 
 function drawTriangle() {
-    var canvas = document.getElementById('sprite-container-left');
+    var canvas = document.getElementById('left-title');
     if (canvas.getContext) {
         var ctx = canvas.getContext('2d');
-        var x1 = getRandomInt(100)
-        var y1 = getRandomInt(100)
-        var x2 = getRandomInt(99)
-        var y2 = getRandomInt(99)
-        var x3 = getRandomInt(98)
-        var y3 = getRandomInt(98)
+        var x1 = getRandomInt(canvas.width)
+        var y1 = getRandomInt(canvas.height)
+        var x2 = getRandomInt(canvas.width - 5)
+        var y2 = getRandomInt(canvas.height - 5)
+        var x3 = getRandomInt(canvas.width - 10)
+        var y3 = getRandomInt(canvas.height - 10)
 
         // Filled triangle
         ctx.strokeStyle = getRandomColor(getRandomInt(3));
@@ -37,7 +37,7 @@ function drawTriangle() {
 
         triangleIterator++;
         if (triangleIterator === 50) {
-            ctx.clearRect(0, 0, 100, 100);
+            ctx.clearRect(0, 0, canvas.width , canvas.height );
             triangleIterator = 0;
         }
     }
@@ -45,11 +45,11 @@ function drawTriangle() {
 }
 
 function drawCircle() {
-    var canvas = document.getElementById('sprite-container-right');
+    var canvas = document.getElementById('right-title');
     if (canvas.getContext) {
         var ctx = canvas.getContext('2d');
-        var x1 = getRandomInt(100)
-        var y1 = getRandomInt(100)
+        var x1 = getRandomInt(canvas.width)
+        var y1 = getRandomInt(canvas.height)
        
 
         // Filled triangle
@@ -69,7 +69,7 @@ function drawCircle() {
 
         circleIterator++;
         if (circleIterator === 50) {
-            ctx.clearRect(0, 0, 100, 100);
+            ctx.clearRect(0, 0, canvas.width , canvas.height );
             circleIterator = 0;
         }
     }

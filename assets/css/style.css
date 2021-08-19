@@ -541,6 +541,8 @@
     #sprite-container-left {
         display: block;
         align-self: center;
+        border: solid 5px white;
+        border-radius: 10px;
     }
 
     #second-title-container {
@@ -549,8 +551,9 @@
 
     #sprite-container-right {
         display: block;
-
         align-self: center;
+        border: solid 5px white;
+        border-radius: 10px;
     }
 
     nav {
@@ -584,12 +587,14 @@
     #about-me-text {
         display: block;
         word-wrap: break-word;
-        border: solid 1px black;
+        border: solid 5px white;
+        border-radius: 10px;
         width: 100%;
         height: auto;
         background-color: grey;
         color: white;
         text-align: center;
+        margin: 5px;
     }
 
     #lower-bar {

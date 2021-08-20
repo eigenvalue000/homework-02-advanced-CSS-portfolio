@@ -46,6 +46,7 @@
         display: block;
         border: solid 5px white;
         border-radius: 10px;
+        background-color: white;
         align-self: center;
         margin-right: 30px;
         height: 50%;
@@ -75,6 +76,7 @@
     #right-title{
         display: block;
         border: solid 5px white;
+        background-color: white;
         border-radius: 10px;
         align-self: center;
         margin-left: 30px;
@@ -335,6 +337,7 @@
         display: block;
         border: solid 2px white;
         border-radius: 10px;
+        background-color: white;
         align-self: center;
         margin-right: 30px;
         height: 50%;
@@ -365,6 +368,7 @@
         display: block;
         border: solid 2px white;
         border-radius: 10px;
+        background-color: white;
         align-self: center;
         margin-left: 30px;
         height: 50%;
@@ -589,6 +593,7 @@
         display: block;
         border: solid 2px white;
         border-radius: 10px;
+        background-color: white;
         align-self: center;
         margin-right: 30px;
         height: 50%;
@@ -618,6 +623,7 @@
     #right-title{
         display: block;
         border: solid 2px white;
+        background-color: white;
         border-radius: 10px;
         align-self: center;
         margin-left: 30px;
@@ -842,6 +848,7 @@
     #left-title {
         display: block;
         border: solid 2px white;
+        background-color: white;
         border-radius: 10px;
         align-self: center;
         margin-right: 30px;
@@ -872,6 +879,7 @@
     #right-title{
         display: block;
         border: solid 2px white;
+        background-color: white;
         border-radius: 10px;
         align-self: center;
         margin-left: 30px;

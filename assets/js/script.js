@@ -78,7 +78,7 @@ function drawCircle() {
 var triangleIterator = 0;
 var circleIterator = 0;
 
-// Everything below handles the musical staff animation.
+// Everything below handles the atom animation
 let img = new Image();
 img.src = './assets/images/atom-sprite-sheet.png';
 img.onload = function () {

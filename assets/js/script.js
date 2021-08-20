@@ -16,13 +16,13 @@ function rotateSprite() {
         rotationNum = 0;
     }
 
-    if (rotationNum === getRandomInt(360)) {
-        if (rotationDirection === 1) {
-            rotationDirection = -1;
-        } else {
-            rotationDirection = 1;
-        }
-    }
+    // if (rotationNum === getRandomInt(360)) {
+    //     if (rotationDirection === 1) {
+    //         rotationDirection = -1;
+    //     } else {
+    //         rotationDirection = 1;
+    //     }
+    // }
 
 }
 

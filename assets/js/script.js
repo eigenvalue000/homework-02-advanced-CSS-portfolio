@@ -9,12 +9,21 @@ function getRandomColor(randomNum) {
 
 function rotateSprite() {
     var spriteEl = document.getElementById('profile-sprite');
-    spriteEl.setAttribute('style', `transform: rotate(${rotationNum}deg)`);
+    spriteEl.setAttribute('style', `transform: rotate(${rotationDirection*rotationNum}deg)`);
     console.log(rotationNum);
     rotationNum = rotationNum + 1;
     if (rotationNum === 360) {
         rotationNum = 0;
     }
+
+    if (rotationNum === getRandomInt(360)) {
+        if (rotationDirection === 1) {
+            rotationDirection = -1;
+        } else {
+            rotationDirection = 1;
+        }
+    }
+
 }
 
 function drawTriangle() {
@@ -88,6 +97,7 @@ function drawCircle() {
 var triangleIterator = 0;
 var circleIterator = 0;
 var rotationNum = 0;
+var rotationDirection = 1;
 // Everything below handles the atom animation
 let img = new Image();
 img.src = './assets/images/atom-sprite-sheet.png';

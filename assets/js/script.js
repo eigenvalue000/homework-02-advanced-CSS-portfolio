@@ -9,10 +9,10 @@ function getRandomColor(randomNum) {
 
 function rotateSprite() {
     var spriteEl = document.getElementById('profile-sprite');
-    spriteEl.setAttribute('style', `transform: rotate(${rotationNum*5}deg)`);
+    spriteEl.setAttribute('style', `transform: rotate(${rotationNum}deg)`);
     console.log(rotationNum);
     rotationNum = rotationNum + 1;
-    if (rotationNum === 72) {
+    if (rotationNum === 360) {
         rotationNum = 0;
     }
 }
@@ -166,6 +166,6 @@ function init() {
 
 setInterval(drawTriangle, 1000);
 setInterval(drawCircle, 1000);
-setInterval(rotateSprite, 30)
+setInterval(rotateSprite, 10)
 
 

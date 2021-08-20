@@ -111,17 +111,18 @@
     aside {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
-        width: 50%;
+        justify-content: center;
+        width: 300px;
+        height: 220px;
     }
 
-    #profile-pic {
+    #profile-sprite {
         display: block;
         border: solid 5px white;
         border-radius: 10px;
-        width: 50%;
-        height: 50%;
-        align-self: center;
+        width: 220px;
+        height: 200px;
+        background-color: white;
     }
 
     #about-text {
@@ -372,12 +373,13 @@
         align-items: center;
     }
 
-    #profile-pic {
+    #profile-sprite {
         display: block;
         border: solid 5px white;
         border-radius: 10px;
-        width: 50%;
-        height: 50%;
+        width: 220px;
+        height: 200px;
+        background-color: white;
     }
 
     #about-text {
@@ -624,12 +626,13 @@
         align-items: center;
     }
 
-    #profile-pic {
+    #profile-sprite {
         display: block;
         border: solid 5px white;
         border-radius: 10px;
-        width: 50%;
-        height: 50%;
+        width: 220px;
+        height: 200px;
+        background-color: white;
     }
 
     #about-text {
@@ -876,12 +879,13 @@
         align-items: center;
     }
 
-    #profile-pic {
+    #profile-sprite {
         display: block;
         border: solid 5px white;
         border-radius: 10px;
-        width: 50%;
-        height: 50%;
+        width: 220px;
+        height: 200px;
+        background-color: white;
     }
 
     #about-text {

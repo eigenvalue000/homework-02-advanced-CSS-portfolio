@@ -37,11 +37,11 @@ function drawTriangle() {
 
         triangleIterator++;
         if (triangleIterator === 50) {
-            ctx.clearRect(0, 0, canvas.width , canvas.height );
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
             triangleIterator = 0;
         }
     }
-    
+
 }
 
 function drawCircle() {
@@ -50,12 +50,12 @@ function drawCircle() {
         var ctx = canvas.getContext('2d');
         var x1 = getRandomInt(canvas.width)
         var y1 = getRandomInt(canvas.height)
-       
+
 
         // Filled triangle
         ctx.strokeStyle = getRandomColor(getRandomInt(3));
         ctx.beginPath();
-        
+
         ctx.arc(x1, y1, Math.min(canvas.width - x1, canvas.height - y1), 0, Math.PI * 2, true);
         ctx.stroke();
 
@@ -69,7 +69,7 @@ function drawCircle() {
 
         circleIterator++;
         if (circleIterator === 50) {
-            ctx.clearRect(0, 0, canvas.width , canvas.height );
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
             circleIterator = 0;
         }
     }
@@ -77,6 +77,82 @@ function drawCircle() {
 
 var triangleIterator = 0;
 var circleIterator = 0;
+
+// Everything below handles the musical staff animation.
+let img = new Image();
+img.src = './assets/images/atom-sprite-sheet.png';
+img.onload = function () {
+    init();
+};
+
+let canvas = document.getElementById('profile-sprite');
+let ctx = canvas.getContext('2d');
+
+var x1 = [0, 31, 63, 95, 127, 159,
+          0, 31, 63, 95, 127, 159,
+          0, 31, 63, 95, 127, 159,
+          0, 31, 63, 95, 127, 159,
+          0, 31, 63, 95, 127, 159,
+          0, 31, 63, 95, 127, 159,
+          0, 31, 63, 95];
+var y1 = [0, 0, 0, 0, 0, 0,
+          31, 31, 31, 31, 31, 31,
+          63, 63, 63, 63, 63, 63,
+          95, 95, 95, 95, 95, 95,
+          127, 127, 127, 127, 127, 127,
+          159, 159, 159, 159, 159, 159,
+          191, 191, 191, 191];
+var x2 = [31, 63, 95, 127, 159, 191,
+          31, 63, 95, 127, 159, 191,
+          31, 63, 95, 127, 159, 191,
+          31, 63, 95, 127, 159, 191,
+          31, 63, 95, 127, 159, 191,
+          31, 63, 95, 127, 159, 191,
+          31, 63, 95, 127];
+var y2 = [31, 31, 31, 31, 31, 31,
+          63, 63, 63, 63, 63, 63,
+          95, 95, 95, 95, 95, 95,
+          127, 127, 127, 127, 127, 127,
+          159, 159, 159, 159, 159, 159,
+          191, 191, 191, 191, 191, 191,
+          223, 223, 223, 223];
+var widthArray = [310, 620, 930, 1240, 1550, 1860,
+                  310, 620, 930, 1240, 1550, 1860,
+                  310, 620, 930, 1240, 1550, 1860,
+                  310, 620, 930, 1240, 1550, 1860,
+                  310, 620, 930, 1240, 1550, 1860,
+                  310, 620, 930, 1240, 1550, 1860,
+                  310, 620, 930, 1240];
+var heightArray = [140, 140, 140, 140, 140, 140,
+                   280, 280, 280, 280, 280, 280,
+                   420, 420, 420, 420, 420, 420,
+                   560, 560, 560, 560, 560, 560,
+                   700, 700, 700, 700, 700, 700,
+                   840, 840, 840, 840, 840, 840,
+                   980, 980, 980, 980];
+let frameCount = 0;
+let currentLoopIndex = 0;
+
+function step() {
+    frameCount++;
+    if (frameCount < 6) {
+        window.requestAnimationFrame(step);
+        return;
+    }
+    frameCount = 0;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, x1[currentLoopIndex], y1[currentLoopIndex], x2[currentLoopIndex],
+        y2[currentLoopIndex], 0, 0, widthArray[currentLoopIndex], heightArray[currentLoopIndex]);
+    currentLoopIndex++;
+    if (currentLoopIndex >= x1.length) {
+        currentLoopIndex = 0;
+    }
+    window.requestAnimationFrame(step);
+}
+
+function init() {
+    window.requestAnimationFrame(step);
+}
 
 setInterval(drawTriangle, 1000);
 setInterval(drawCircle, 1000);

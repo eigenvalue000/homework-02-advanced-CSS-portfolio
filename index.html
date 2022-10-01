@@ -42,8 +42,7 @@
             <p id="about-text">I graduated from the University of California,
                 Davis with a Bachelor of Science degree in Mathematical
                 Analytics and Operations Research with a minor in Economics.
-                I really like math. Math is my favorite subject. I am
-                currently studying software development to be a
+                I really like math. Math is my favorite subject. I am a
                 full-stack developer and I am also studying accounting
                 to earn my CPA license.
             </p>
@@ -52,9 +51,47 @@
         <div id="projects">
             <div id="main-project">
                 <div id="main-project-card">
-                    <a href="https://eigenvalue000.github.io/project-01/" id="main-project-link"><img
-                            src="./assets/images/mellifluous.png" id="main-project-pic"></a>
-                    <p id="main-project-text">Mellifluous is an application which
+                    <a href="https://www.martingale.app" id="main-project-link"><img
+                            src="./assets/images/martingale.png" id="main-project-pic"></a>
+                    <p id="main-project-text">martingale.app is an application which
+                        allows a user to enter in portfolio weightings corresponding
+                        to each stock in their portfolio. From there, the application
+                        will calculate the exact amount of stock to buy and sell for each
+                        position to properly align the portfolio with its weightings.
+                        Each user has their own account and can save one portfolio. The 
+                        application uses a NoSQL MongoDB database for its backend and the 
+                        frontend uses React. Click on the picture above to use the 
+                        application. Since the code is proprietary, I have not 
+                        included a Github repository.
+                    </p>
+                    
+                </div>
+
+
+            </div>
+
+            <div id="secondary-projects">
+                <div id="project-card">
+                    <a href="https://quiet-sea-36031.herokuapp.com/" id="secondary-project-link"><img
+                            src="./assets/images/stockcallerPic.png" id="secondary-project-pic"></a>
+                    <p id="secondary-project-text">Stock Caller is an application that allows 
+                        a user to create an account to view hedge fund activity, stock prices,
+                        and cryptocurrency prices. The application
+                        uses Axios to access a third party API, namely the sec.gov REST API
+                        to access a hedge fund by its CIK number and then calculate the number
+                        of stock positions that the hedge fund has either added or subtracted.
+                        For the stock prices and the cryptocurrency prices, the application 
+                        again uses Axios to access the IEX REST API for stock prices and the
+                        Coinbase REST API for cryptocurrency prices. The application uses a MySQL
+                        database for the backend. Click the picture to use the application. The Github link is below.
+                    </p>
+                    <a href="https://github.com/eigenvalue000/stock-caller" id="github-link">Github Repo</a>
+                </div>
+
+                <div id="project-card">
+                    <a href="https://eigenvalue000.github.io/project-01/" id="secondary-project-link"><img
+                            src="./assets/images/mellifluous.png" id="secondary-project-pic"></a>
+                    <p id="secondary-project-text">Mellifluous is an application which
                         finds an artist or song. The search results are displayed in
                         a user friendly format and include gifs of the artist. A link
                         to the lyrics are also provided per search result. Click on
@@ -64,10 +101,6 @@
                     <a href="https://github.com/eigenvalue000/project-01" id="github-link">Github Repo</a>
                 </div>
 
-
-            </div>
-
-            <div id="secondary-projects">
                 <div id="project-card">
                     <a href="https://eigenvalue000.github.io/weather-dashboard/" id="secondary-project-link"><img
                             src="./assets/images/weather-dashboard-pic.png" id="secondary-project-pic"></a>
